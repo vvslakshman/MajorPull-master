@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <data></data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/standard_margin"
+            android:paddingRight="@dimen/standard_margin"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/logo_margine"
+                android:src="@drawable/logo" />
+
+
+            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:text="@string/otp_verification"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/standardsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/logo_margine"
+                android:layout_marginTop="@dimen/logo_margine"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/textview_margin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/min_margin"
+                        android:background="@color/light_greyextra" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/textview_margin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/min_margin"
+                        android:background="@color/light_greyextra" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/textview_margin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/min_margin"
+                        android:background="@color/light_greyextra" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/textview_margin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/min_margin"
+                        android:background="@color/light_greyextra" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/textview_margin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/min_margin"
+                        android:background="@color/light_greyextra" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/textview_margin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/min_margin"
+                        android:background="@color/light_greyextra" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/you_should_receive_your_code_in_less_than_2_minutes"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/normalsize"
+
+                />
+
+            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                android:id="@+id/tv_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/logo_margine"
+                android:layout_marginTop="@dimen/logo_margine"
+                android:background="@drawable/round_rect_red"
+                android:gravity="center"
+                android:padding="@dimen/standard_margin"
+                android:text="@string/verify"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/standard_margin"
+
+                />
+
+
+            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                android:id="@+id/tv_resend_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/logo_margine"
+                android:text="@string/resend_otp"
+                android:textColor="@color/bluecolor"
+                android:textSize="@dimen/normalsize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

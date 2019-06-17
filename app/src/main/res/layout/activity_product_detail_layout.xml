@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_submit"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/extralarge_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/standard_margin">
+
+            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/product_detail_form"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/extralargesize"
+
+                />
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/extralarge_margin"
+                android:layout_marginTop="@dimen/min_margin"
+                android:text="@string/fill_form_details_to_transport_your_product"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/normalsize"
+
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_margin"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/material"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/standardsize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <majorpull.com.majorpull.CustomViews.RegularEditText
+                        android:id="@+id/et_materialtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/normal_margin"
+                        android:drawableRight="@drawable/material_icon"
+                        android:hint="@string/enter_type"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/et_materialtype"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:background="@color/light_greyextra" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extralarge_margin"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/weight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/standardsize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <majorpull.com.majorpull.CustomViews.RegularEditText
+                        android:id="@+id/et_weightkg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/normal_margin"
+                        android:drawableRight="@drawable/wieght"
+                        android:hint="@string/enter_in_kg"
+                        android:inputType="numberDecimal"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/et_weightkg"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:background="@color/light_greyextra" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extralarge_margin"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/standardsize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <majorpull.com.majorpull.CustomViews.RegularEditText
+                        android:id="@+id/et_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/normal_margin"
+                        android:drawableRight="@drawable/date_calendar"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/dd_mm_yyyy"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/et_dob"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:background="@color/light_greyextra" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extralarge_margin"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/standardsize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <majorpull.com.majorpull.CustomViews.RegularEditText
+                        android:id="@+id/et_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/normal_margin"
+                        android:drawableRight="@drawable/time"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="00:00:00"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/standardsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/et_time"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:background="@color/light_greyextra" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extralarge_margin"
+                android:text="@string/specific_instructions_any"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+            <majorpull.com.majorpull.CustomViews.RegularEditText
+                android:id="@+id/et_massage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extralarge_margin"
+                android:background="@null"
+                android:hint="@string/enter_message"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/standardsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/standardsize"
+                android:background="@color/light_greyextra" />
+        </LinearLayout>
+
+
+        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_red"
+            android:gravity="center"
+            android:padding="@dimen/standardsize"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largesize" />
+
+    </RelativeLayout>
+
+</layout>

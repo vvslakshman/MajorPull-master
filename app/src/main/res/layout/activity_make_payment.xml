@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_submit"
+            android:layout_below="@id/toolbar"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/logo_margine"
+                    android:text="@string/make_payment"
+                    android:textColor="@color/dark_red"
+                    android:textSize="@dimen/largesize" />
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/doublestandard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:text="@string/choose_option_and_make_your_trip_payment"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/normalsize" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/textview_margin"
+                    android:paddingTop="@dimen/textview_margin">
+
+                    <ImageView
+                        android:id="@+id/iv_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/redio_selector"
+
+                        />
+
+                    <majorpull.com.majorpull.CustomViews.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:text="@string/cash"
+                        android:textColor="@color/dark_navi_blue"
+                        android:textSize="@dimen/standardsize" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/light_greyextra" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_debitcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/textview_margin"
+                    android:paddingTop="@dimen/textview_margin">
+
+                    <ImageView
+                        android:id="@+id/iv_debit_cradit_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/redio_selector"
+
+                        />
+
+                    <majorpull.com.majorpull.CustomViews.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standard_margin"
+
+                        android:text="@string/debit_credit_card"
+                        android:textColor="@color/dark_navi_blue"
+                        android:textSize="@dimen/standardsize" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bottemdebitcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingRight="@dimen/standard_margin"
+                    android:visibility="gone">
+
+
+                    <majorpull.com.majorpull.CustomViews.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/card_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/standardsize" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:background="@color/light_greyextra" />
+
+
+                    <majorpull.com.majorpull.CustomViews.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/doublestandard_margin"
+                        android:background="@null"
+                        android:hint="@string/card_holder_name"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/standardsize" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:background="@color/light_greyextra" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <majorpull.com.majorpull.CustomViews.RegularEditText
+                                android:id="@+id/et_expriy_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/doublestandard_margin"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="@string/expiry_date"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/standardsize" />
+
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1px"
+                                android:layout_marginTop="@dimen/standard_margin"
+                                android:background="@color/light_greyextra" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/extra_excel_margine"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <majorpull.com.majorpull.CustomViews.RegularEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/doublestandard_margin"
+                                android:background="@null"
+                                android:hint="@string/cvv"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:singleLine="true"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/standardsize" />
+
+
+                            <View
+
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="@dimen/standard_margin"
+                                android:background="@color/light_greyextra" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_debitcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/light_greyextra"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_red"
+            android:gravity="center"
+            android:padding="@dimen/standard_margin"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standardsize" />
+    </RelativeLayout>
+
+
+</layout>

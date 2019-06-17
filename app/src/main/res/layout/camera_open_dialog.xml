@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <majorpull.com.majorpull.CustomViews.BoldLightTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/standardsize"
+        android:text="@string/choose_option" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_greyextra" />
+
+    <TextView
+        android:id="@+id/tv_takeimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/cemera"
+        android:textColor="@color/dark_navi_blue"
+        android:textSize="@dimen/standardsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_greyextra" />
+
+    <majorpull.com.majorpull.CustomViews.RegularTextView
+        android:id="@+id/tv_takecameraroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/standard_margin"
+        android:text="Gallery"
+        android:textColor="@color/dark_navi_blue"
+        android:textSize="@dimen/standardsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_greyextra" />
+
+    <majorpull.com.majorpull.CustomViews.RegularTextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/standard_margin"
+        android:text="Cancel"
+        android:textColor="@color/dark_navi_blue"
+        android:textSize="@dimen/standardsize" />
+</LinearLayout>

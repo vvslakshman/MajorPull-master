@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingRight="@dimen/standard_margin"
+        android:paddingTop="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_icon_withbg"
+            app:civ_border_color="@color/light_greyextra"
+            app:civ_border_width="1px" />
+
+        <LinearLayout
+            android:id="@+id/ll_context"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_toRightOf="@+id/iv_profile"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="@string/description"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/normalsize" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ll_context"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:background="@color/light_greyextra" />
+
+    </RelativeLayout>
+
+
+</layout>

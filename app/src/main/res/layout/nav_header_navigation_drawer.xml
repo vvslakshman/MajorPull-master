@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/doublestandard_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/user_deaultimg" />
+
+    <majorpull.com.majorpull.CustomViews.BoldLightTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="@string/jhonson_williams"
+        android:id="@+id/usernametext"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/dark_red"
+        android:textSize="@dimen/standardsize" />
+
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--TextSize-->
+    <dimen name="minsize">10sp</dimen>
+    <dimen name="normalsize">12sp</dimen>
+    <dimen name="standardsize">14sp</dimen>
+    <dimen name="largesize">16sp</dimen>
+    <dimen name="extralargesize">18sp</dimen>
+    <dimen name="doublestandardsize">20sp</dimen>
+
+
+    <!--margin size-->
+    <dimen name="textview_margin">5dp</dimen>
+    <dimen name="min_margin">10dp</dimen>
+    <dimen name="normal_margin">12dp</dimen>
+    <dimen name="standard_margin">14dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="extralarge_margin">18dp</dimen>
+    <dimen name="doublestandard_margin">20dp</dimen>
+    <dimen name="extra_excel_margine">30dp</dimen>
+
+    <dimen name="logo_margine">50dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="profilesize">90dp</dimen>
+    <dimen name="profileframemargin">200dp</dimen>
+    <dimen name="prb_symbolic_tick_default_text_size">15sp</dimen>
+    <dimen name="prb_drawable_tick_default_spacing">1dp</dimen>
+    <dimen name="miniwidth">30dp</dimen>
+    <dimen name="miniwidth_fbtext">180dp</dimen>
+</resources>

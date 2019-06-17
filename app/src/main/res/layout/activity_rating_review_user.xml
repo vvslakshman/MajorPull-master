@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/toolbar"
+
+            layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_submit"
+            android:layout_below="@+id/toolbar"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingRight="@dimen/standard_margin"
+
+                >
+
+                <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/extra_excel_margine"
+                    android:text="@string/rate_review"
+                    android:textColor="@color/dark_red"
+                    android:textSize="@dimen/largesize" />
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/give_rating_and_review_to_driver"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/normalsize" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/extra_excel_margine"
+                        android:elevation="15dp"
+                        android:src="@color/white"
+                        app:civ_border_color="@color/light_greyextra"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="1dp"
+                        app:civ_fill_color="@color/dark_red" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_profile"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/extra_excel_margine"
+                        android:elevation="15dp"
+                        android:src="@drawable/user_deaultimg"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="1dp"
+                        app:civ_fill_color="@color/white" />
+
+
+                </RelativeLayout>
+
+
+                <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/justin_upper"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/standardsize" />
+
+
+                <majorpull.com.majorpull.util.ProperRatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    app:prb_clickable="true"
+                    app:prb_defaultRating="3"
+                    app:prb_tickNormalDrawable="@drawable/star_nonactive"
+                    app:prb_tickSelectedDrawable="@drawable/star_activeicon"
+                    app:prb_totalTicks="5"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="@dimen/extra_excel_margine"
+                    android:layout_marginTop="@dimen/extra_excel_margine"
+                    android:background="@color/light_greyextra"
+                    android:orientation="vertical">
+
+
+                    <majorpull.com.majorpull.CustomViews.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/textview_margin"
+                        android:background="@null"
+                        android:hint="@string/give_your_review"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normalsize"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:background="@color/dark_red"
+            android:gravity="center"
+            android:padding="@dimen/standard_margin"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</layout>

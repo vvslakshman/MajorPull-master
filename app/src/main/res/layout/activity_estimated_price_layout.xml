@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <data>
+
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_bookmyride"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/doublestandard_margin"
+                android:orientation="vertical"
+                android:padding="@dimen/standardsize">
+
+                <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dump_truck"
+                    android:drawablePadding="@dimen/standardsize"
+                    android:drawableStart="@drawable/dump_truck"
+                    android:text="@string/dump_trucks"
+                    android:textColor="@color/dark_red"
+                    android:textSize="@dimen/standardsize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/min_margin"
+                    android:background="@color/dark_red" />
+
+
+                <LinearLayout
+                    android:id="@+id/rl_pickupdattime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/extralarge_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_calendar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/calendar_icon"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_datepicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standardsize"
+                        android:orientation="vertical">
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/pick_up_date_amp_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normalsize" />
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_27_feb_2018_10_50_pm"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ll_datepicker"
+                    android:layout_marginTop="@dimen/standardsize"
+                    android:background="@color/light_greyextra" />
+
+                <LinearLayout
+                    android:id="@+id/rl_pickup_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/extralarge_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_pickuplocaton"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pickup_location"
+
+                        />
+
+                    <LinearLayout
+
+                        android:id="@+id/ll_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standardsize"
+                        android:layout_toRightOf="@+id/iv_pickuplocaton"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/pickup_location"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normalsize" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/michael_colyar"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/_9859_e_yates_chicago_il_60617_312_555_5555"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ll_location"
+                    android:layout_marginTop="@dimen/standardsize"
+                    android:background="@color/light_greyextra" />
+
+                <LinearLayout
+                    android:id="@+id/rl_drop_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/extralarge_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_drop_location"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/location_finder"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_drop_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standardsize"
+                        android:layout_toRightOf="@+id/iv_drop_location"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/drop_location"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normalsize" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/demario_colyar"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:singleLine="true"
+                            android:text="@string/_6732_s_wintergreen_rd_dallas_tx_75221_773_555_5555"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ll_drop_location"
+                    android:layout_marginTop="@dimen/standardsize"
+                    android:background="@color/light_greyextra" />
+
+                <LinearLayout
+                    android:id="@+id/rl_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/extralarge_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_material"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/material_icon"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_material"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standardsize"
+                        android:layout_toRightOf="@+id/iv_material"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/material"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normalsize" />
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/aquarium_glass"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ll_material"
+                    android:layout_marginTop="@dimen/standardsize"
+                    android:background="@color/light_greyextra" />
+
+                <LinearLayout
+                    android:id="@+id/rl_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/extralarge_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_weight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/weight_icon"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standardsize"
+                        android:layout_toRightOf="@+id/iv_weight"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/weight"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normalsize" />
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/_5_8_kg"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ll_weight"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standardsize"
+                    android:background="@color/light_greyextra" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:clickable="true"
+                    android:overScrollMode="never"
+                    card_view:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/min_margin">
+
+                        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/standardsize"
+                            android:text="@string/estimated_price"
+                            android:textColor="@color/dark_navi_blue" />
+
+                        <majorpull.com.majorpull.CustomViews.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/standardsize"
+                            android:gravity="center"
+                            android:text="@string/_9_12"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/extra_excel_margine" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/standardsize"
+                            android:text="@string/approximate_travel_time_30_0_min"
+                            android:textColor="@color/light_red"
+                            android:textSize="@dimen/standardsize" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/min_margin"
+                            android:layout_marginTop="@dimen/standardsize"
+
+                            android:gravity="center"
+                            android:text="@string/this_is_just_an_estimate_actual_fare_may_very_slightly_based_on_traffic_or_discounts"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/normalsize" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+            android:id="@+id/tv_bookmyride"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_red"
+            android:gravity="center"
+            android:padding="@dimen/standard_margin"
+            android:text="@string/book_my_ride"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standardsize" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/standard_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/standard_margin"
+                android:src="@drawable/cross_icon" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/confirm_icon" />
+
+
+            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/standard_margin"
+                android:text="@string/thank_you_for_booking"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+            <majorpull.com.majorpull.CustomViews.LightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/standard_margin"
+                android:paddingBottom="@dimen/standard_margin"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/we_will_get_back_to_you_in_30_min_n_with_driver_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</layout>

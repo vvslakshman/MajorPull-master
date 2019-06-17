@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+    </data>
+
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+
+            <include layout="@layout/app_bar_main" />
+
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:textSize="@dimen/standardsize"
+            app:headerLayout="@layout/nav_header_navigation_drawer"
+            app:itemIconTint="@color/dark_red"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/activity_navigation_drawer_drawer" />
+
+        <!--app:headerLayout="@layout/layout_navigationdrawer_userprofile"-->
+        <!--app:itemTextAppearance="@style/NavigationText"-->
+
+    </android.support.v4.widget.DrawerLayout>
+</layout>

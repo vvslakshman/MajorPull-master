@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--<include-->
+            <!--android:id="@+id/toolbar"-->
+            <!--layout="@layout/toolbar" />-->
+
+        <!--Notification-->
+        <RelativeLayout
+            android:id="@+id/rl_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_margin">
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/notification_icon"
+                android:drawablePadding="@dimen/standard_margin"
+                android:text="@string/notification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+            <ImageView
+                android:id="@+id/iv_toggle_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/toggle_on" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/iv_toggle_switch"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:background="@color/light_greyextra" />
+
+
+        <!--ChangePassword-->
+        <RelativeLayout
+            android:id="@+id/rl_changepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_margin">
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/change_password"
+                android:drawablePadding="@dimen/standard_margin"
+                android:text="@string/change_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/iv_toggle_switch"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:background="@color/light_greyextra" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_margin">
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/logout_icon"
+                android:drawablePadding="@dimen/standard_margin"
+                android:text="@string/logout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/iv_toggle_switch"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:background="@color/light_greyextra" />
+
+    </LinearLayout>
+</layout>

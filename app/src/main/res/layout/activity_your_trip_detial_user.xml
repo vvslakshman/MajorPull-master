@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingRight="@dimen/standard_margin"
+                    android:paddingTop="@dimen/standard_margin">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/user_immg"
+                        app:civ_border_color="@color/grey"
+                        app:civ_border_width="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_toRightOf="@+id/iv_profile"
+                        android:orientation="vertical">
+
+                        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/justin"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/standardsize" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/driver"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/iv_profile"
+                        android:layout_marginTop="@dimen/standardsize"
+                        android:background="@color/light_greyextra" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingRight="@dimen/standard_margin"
+                    android:paddingTop="@dimen/standard_margin">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profilenext"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/truck_img"
+                        app:civ_border_color="@color/grey"
+                        app:civ_border_width="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_toRightOf="@+id/iv_profilenext"
+                        android:orientation="vertical">
+
+                        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/toyota"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/standardsize" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/etios_uk_cs_12345"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/standardsize" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/iv_profilenext"
+                        android:layout_marginTop="@dimen/standardsize"
+                        android:background="@color/light_greyextra" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_pickup_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingRight="@dimen/standard_margin"
+                    android:paddingTop="@dimen/standard_margin"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_pickuplocaton"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pickup_location"
+
+                        />
+
+                    <LinearLayout
+
+                        android:id="@+id/ll_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_toRightOf="@+id/iv_pickuplocaton"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/pickuplocation_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/standardsize" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin">
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/michael_colyar"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/normalsize" />
+
+                            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerHorizontal="true"
+                                android:singleLine="true"
+                                android:text="@string/_27_feb_2018_10_50_pm"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/minsize" />
+
+                        </RelativeLayout>
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/_9859_e_yates_chicago_il_60617_312_555_5555"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/normalsize" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/ll_location"
+                        android:layout_marginTop="@dimen/standardsize"
+                        android:background="@color/light_greyextra" />
+                </RelativeLayout>
+
+
+                <!--DropLocation-->
+                <RelativeLayout
+                    android:id="@+id/rl_drop_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/standard_margin"
+                    android:paddingRight="@dimen/standard_margin"
+                    android:paddingTop="@dimen/standard_margin"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_drop_location"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/location_finder"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_drop_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/standardsize"
+                        android:layout_toRightOf="@+id/iv_drop_location"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin"
+                            android:text="@string/drop_location_n_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/standardsize" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textview_margin">
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/demario_colyar"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/normalsize" />
+
+                            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/_27_feb_2018_10_50_pm"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/minsize" />
+
+
+                        </RelativeLayout>
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/_6732_s_wintergreen_rd_dallas_tx_75221_773_555_5555"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/normalsize" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/ll_drop_location"
+                        android:layout_marginTop="@dimen/standardsize"
+                        android:background="@color/light_greyextra" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/standard_margin">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/billig_details"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/standardsize"
+
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/normal_margin"
+                            android:paddingTop="@dimen/normalsize">
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/base_fare"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/_10"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/normal_margin"
+                            android:paddingTop="@dimen/normalsize">
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/distance"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/_8"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/normal_margin"
+                            android:paddingTop="@dimen/normalsize">
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/time"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/_2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/normal_margin"
+                            android:paddingTop="@dimen/normalsize"
+
+                            >
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/discounts"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                            <majorpull.com.majorpull.CustomViews.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/_5"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/standardsize"
+
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/light_greyextra" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/standard_margin"
+                        android:paddingBottom="@dimen/extralarge_margin"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/standard_margin"
+                        android:paddingTop="@dimen/extralarge_margin"
+
+
+                        >
+
+                        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/total_bill"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/standardsize"
+
+                            />
+
+                        <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/_12"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/standardsize"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

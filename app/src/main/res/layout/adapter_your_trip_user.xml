@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/standard_margin"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/wednesday_28_feb_2018"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+            <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                android:id="@+id/tv_scgeduled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/scheduled"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/standardsize" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standardsize"
+            android:orientation="horizontal">
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="@string/booking_id"
+                android:textSize="@dimen/standardsize" />
+
+            <majorpull.com.majorpull.CustomViews.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1204568"
+                android:textColor="@color/black"
+                android:textSize="@dimen/standardsize" />
+
+        </LinearLayout>
+
+
+        <majorpull.com.majorpull.CustomViews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standardsize"
+            android:drawableLeft="@drawable/locate_icon"
+            android:drawablePadding="@dimen/min_margin"
+            android:text="@string/little_telaviv_hostel_mo_usa"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/normalsize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/standardsize"
+            android:background="@color/light_greyextra"  />
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/standardsize"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="title"
+                    android:textColor="#030303"
+                    android:textSize="@dimen/standardsize" />
+
+
+                <majorpull.com.majorpull.CustomViews.RegularTextView
+                    android:id="@+id/tv_countrycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:gravity="left|center_vertical"
+                    android:text="+91"
+                    android:textColor="#8D8C92"
+                    android:textSize="@dimen/standardsize"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/checked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/standardsize"
+                    android:src="@drawable/check"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/light_greyextra" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

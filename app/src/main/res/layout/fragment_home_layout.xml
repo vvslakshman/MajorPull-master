@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="homeuserdata"
+            type="majorpull.com.majorpull.user.Activity.MainActivity" />
+
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--<include layout="@layout/toolbar"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--/>-->
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/doublestandard_margin"
+            android:background="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/standard_margin">
+
+
+                <ImageView
+                    android:id="@+id/iv_all_infinder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/all_in_onefinder" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/ll_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/textview_margin"
+                    android:layout_toRightOf="@+id/iv_all_infinder"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_pickup_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/min_margin"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pickup_location"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/minsize" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/michael_colyar"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/normalsize" />
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/_9859_e_yates_chicago_il_60617_312_555_5555"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/normalsize" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/ll_pickup_location"
+                        android:layout_marginTop="@dimen/textview_margin"
+                        android:background="@color/light_grey" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_drop_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/min_margin"
+                        android:layout_marginTop="@dimen/min_margin"
+                        android:orientation="vertical">
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/drop_location"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/minsize" />
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/demario_colyar"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/normalsize" />
+
+
+                        <majorpull.com.majorpull.CustomViews.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/_6732_s_wintergreen_rd_dallas_tx_75221_773_555_5555"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/normalsize" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+
+                android:background="@color/white"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <majorpull.com.majorpull.CustomViews.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:text="@string/justin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/standardsize" />
+
+
+                    <majorpull.com.majorpull.CustomViews.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="3dp"
+
+                        android:gravity="center"
+                        android:text="@string/driver"
+                        android:textColor="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <majorpull.com.majorpull.CustomViews.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:text="@string/uk_cs_12345"
+                        android:textColor="@color/dark_red"
+                        android:textSize="@dimen/standardsize" />
+
+
+                    <majorpull.com.majorpull.CustomViews.RegularTextView
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="3dp"
+                        android:drawableLeft="@drawable/star_icon"
+                        android:drawablePadding="@dimen/textview_margin"
+                        android:gravity="center"
+                        android:text="3.5"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/user_img"
+                        android:visibility="visible" />
+
+                    <majorpull.com.majorpull.CustomViews.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/toyota"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/standardsize" />
+
+                    <majorpull.com.majorpull.CustomViews.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/etios"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/normalsize" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="115dp"
+                android:src="@drawable/user_immg" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--Selecterliner-->
+            <majorpull.com.majorpull.CommonClass.SelctedLineareLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_footer_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/normal_margin"
+                android:paddingTop="@dimen/normal_margin"
+                android:visibility="visible"
+                android:weightSum="4">
+
+                <LinearLayout
+
+                    android:id="@+id/ll_sprintervan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/textview_margin"
+                        android:src="@drawable/sprinter_van" />
+
+                    <majorpull.com.majorpull.CustomViews.LightTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sprinter_van"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/minsize" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_transportcar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/textview_margin"
+                        android:src="@drawable/transporting" />
+
+                    <majorpull.com.majorpull.CustomViews.LightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transporting_cars"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/minsize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_haul_boats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/textview_margin"
+                        android:src="@drawable/haul" />
+
+                    <majorpull.com.majorpull.CustomViews.LightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/haul_boats"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/minsize" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dump_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/textview_margin"
+                        android:src="@drawable/dump_truckmain" />
+
+                    <majorpull.com.majorpull.CustomViews.LightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dump Trucks"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/minsize" />
+
+                </LinearLayout>
+
+
+            </majorpull.com.majorpull.CommonClass.SelctedLineareLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                    android:id="@+id/tv_schedul_ride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/skyblue"
+                    android:gravity="center"
+                    android:padding="@dimen/standardsize"
+                    android:text="@string/schedule_ride"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/standardsize"
+
+                    />
+
+                <majorpull.com.majorpull.CustomViews.BoldLightTextView
+                    android:id="@+id/tv_bokkmy_ride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/dark_red"
+                    android:gravity="center"
+                    android:padding="@dimen/standardsize"
+                    android:text="@string/book_my_ride"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/standardsize"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
